@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: whitesmoke;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+  background-color: dodgerblue;
+  height: 70px;
+  box-shadow: 0 0 14px #000;
+  position: fixed;
+  width: 100%;
+  margin-bottom: 30%;
+  z-index: 999;
+}
+.header h2{
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: lighter;
+  letter-spacing: 1px;
+}
+.form{
+  background-color: rgb(224, 232, 240);
+  height: 40px;
+  box-shadow: 0 0 14px #000;
+  width: 100%;
+  z-index: 999;
+  bottom: 0;
+  position: fixed;
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: center;
+}
+.form form {
+  width: 100%;
+}
+.form input, .updateField{
+  padding: 10px 10px;
+  outline: none;
+  margin-bottom: 5px;
+  width: 60%;
+}
+.form button{
+  padding: 10px 10px;
+  outline: none;
+  cursor: pointer;
+  background-color: dodgerblue;
+  border: none;
+  box-shadow: 0 0 5px #000000;
+  color: #ffffff;
+  margin-left: 20px;
+}
+.todos {
+  margin: auto;
+  display: block;
+  margin-top: 10%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.single-todo{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+table {
+  width: 100%;
+}
+table td{
+  padding: 13px;
+}
+table tr:nth-child(even) {
+  background-color: #b8e0f1;
+}
+table tr:nth-child(odd) {
+  background-color: #dce2e3;
+}
+table th{
+  padding: 13px;
+  text-align: start;
+}
+table tbody button {
+  padding: 8px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+.completed{
+  text-decoration: line-through;
+}
+@media only screen and (max-width: 767px) {
+  .header h2{
+    text-align: center;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    font-size: 20px !important;
+    padding-top: 10px;
+  }
+  .form input{
+    width: 65%;
+  }
+  .form button{
+    margin-left: 9px;
+  }
+  .todos {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 15%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .todos {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 25%;
+    max-width: 100%;
+  }
+}
